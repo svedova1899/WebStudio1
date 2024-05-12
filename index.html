@@ -24,36 +24,33 @@
 
 <body>
     <header class="header">
-        <div class="container">
-            <div class="header__nav-div">
-                <div class="header__logo-div">
-                    <a href="index.html" class="header-logo"><span class="header__logo">Web</span>Studio</a>
-                </div>
-                <nav class="header-nav">
-                    <ul class="header-nav__list">
-                        <li class="header-nav__item">Студія</li>
-                        <li class="header-nav__item">Портфоліо</li>
-                        <li class="header-navm__item">Контакти</li>
-                    </ul>
-                    <ul class="nav-list">
-                        <li class="nav-list__item">
-                            <img src="photo/envelope-grey.svg" alt="envelope" class="nav-list__svg">
-                            <a href="mailto:info@devstudio.com" class="nav-list__mail">info@devstudio.com</a>
-                        </li>
-                        <li class="nav-list__item">
-                            <img src="photo/2.svg" alt="vector" class="nav-list__svg">
-                            <a href="tel:+380961111111" class="nav-list__telephone">+38 096 111 11 11</a>
-                        </li>
-                    </ul>
-                </nav>
+        <div class="container nav-header">
+            <div class="nav-header__logo-div">
+                <a href="index.html" class="nav-header__logo"><span class="nav-header__logo">Web</span>Studio</a>
             </div>
+            <nav class="header-nav">
+                <ul class="header-nav-list">
+                    <li class="header-nav-list__item">Студія</li>
+                    <li class="header-nav-list__item">Портфоліо</li>
+                    <li class="header-nav-list__item">Контакти</li>
+                </ul>
+                <ul class="nav-list">
+                    <li class="nav-list__item">
+                        <img src="photo/envelope-grey.svg" alt="envelope" class="nav-list__svg">
+                        <a href="mailto:info@devstudio.com" class="nav-list__mail">info@devstudio.com</a>
+                    </li>
+                    <li class="nav-list__item">
+                        <img src="photo/2.svg" alt="vector" class="nav-list__svg">
+                        <a href="tel:+380961111111" class="nav-list__telephone">+38 096 111 11 11</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </header>
     <main class="main">
-        <section class="menu-section">
-            <div class="container">
-                <h1 class="menu-title">Ефективні рішення для<br> вашого бізнесу</h1> 
-                <button class="menu-button text-button" data-modal-open>Замовити послугу</button>
+        <section class="menu-section container">
+                <h1 class="menu-section__title">Ефективні рішення для<br> вашого бізнесу</h1>
+                <button class="menu-section__button menu-section__text-button" data-modal-open>Замовити послугу</button>
                 <!-- <div class="backdrop is-hidden" data-modal>
         <div class="modal">
           <button class="btn" data-modal-close><img src="photo/close-model.svg" alt="close" class="modal-img"></button>
@@ -79,100 +76,94 @@
             </label>
               <button class="btn-modal" type="submit">Відправити</button>
         </div> -->
-            </div>
         </section>
-        <section class="attention-to-detail-section">
-            <div class="container">
+        <section class="attention-to-detail-section container">
                 <ul class="attention-to-detail-list">
-                    <li class="attention-to-detail-item"><img src="photo/4.png" alt="antenna"
-                            class="attention-to-detail-img"></li>
-                    <li class="attention-to-detail-item"><img src="photo/7.png" alt="clock"
-                            class="attention-to-detail-img">
+                    <li class="attention-to-detail-list__item"><img src="photo/4.png" alt="antenna"
+                            class="attention-to-detail-lisе__img"></li>
+                    <li class="attention-to-detail-list__item"><img src="photo/7.png" alt="clock"
+                            class="attention-to-detail-list__img">
                     </li>
-                    <li class="attention-to-detail-item"><img src="photo/8.png" alt="diagram"
-                            class="attention-to-detail-img"></li>
-                    <li class="attention-to-detail-item"><img src="photo/5.png" alt="astronaut"
-                            class="attention-to-detail-img">
+                    <li class="attention-to-detail-list__item"><img src="photo/8.png" alt="diagram"
+                            class="attention-to-detail-list__img"></li>
+                    <li class="attention-to-detail-list__item"><img src="photo/5.png" alt="astronaut"
+                            class="attention-to-detail-list__img">
                     </li>
                 </ul>
                 <ul class="attention-to-detail-list-text">
-                    <li class="attention-to-detail-item-text">
-                        <h4 class="title-item">УВАГА ДО ДЕТАЛЕЙ</h4>
-                        <p class="text-item">Ідейні міркування, і навіть початок<br> повсякденної роботи з
+                    <li class="attention-to-detail-list-text__item">
+                        <h4 class="attention-to-detail-list-text__title">УВАГА ДО ДЕТАЛЕЙ</h4>
+                        <p class="attention-to-detail-list-text__text">Ідейні міркування, і навіть початок<br> повсякденної роботи з
                             формування<br>
                             позиції.
                         </p>
                     </li>
-                    <li class="attention-to-detail-item-text">
-                        <h4 class="title-item">ПУНКТУАЛЬНІСТЬ</h4>
-                        <p class="text-item">Завдання організації, особливо рамки <br>і місце навчання кадрів тягне у
+                    <li class="attention-to-detail-list-text__item">
+                        <h4 class="attention-to-detail-list-text__title">ПУНКТУАЛЬНІСТЬ</h4>
+                        <p class="attention-to-detail-list-text__text">Завдання організації, особливо рамки <br>і місце навчання кадрів тягне у
                             себе.
                         </p>
                     </li>
-                    <li class="attention-to-detail-item-text">
-                        <h4 class="title-item">ПЛАНУВАННЯ</h4>
-                        <p class="text-item">Так само консультація з широким <br>активом значною мірою зумовлює.</p>
+                    <li class="attention-to-detail-list-text__item">
+                        <h4 class="attention-to-detail-list-text__title">ПЛАНУВАННЯ</h4>
+                        <p class="attention-to-detail-list-text__text">Так само консультація з широким <br>активом значною мірою зумовлює.</p>
                     </li>
-                    <li class="attention-to-detail-item-text">
-                        <h4 class="title-item">СУЧАСНІ ТЕХНОЛОГІЇ</h4>
-                        <p class="text-item">Значимість цих проблем настільки<br> очевидна, що реалізація планових<br>
+                    <li class="attention-to-detail-list-text__item">
+                        <h4 class="attention-to-detail-list-text__title">СУЧАСНІ ТЕХНОЛОГІЇ</h4>
+                        <p class="attention-to-detail-list-text__text">Значимість цих проблем настільки<br> очевидна, що реалізація планових<br>
                             завдань.</p>
                     </li>
                 </ul>
-            </div>
         </section>
-        <section class="what-we-do">
-            <div class="container">
-                <h2 class="what-we-do-title">Чим ми займаємося</h2>
+        <section class="what-we-do container">
+                <h2 class="what-we-do__title">Чим ми займаємося</h2>
                 <ul class="what-we-do-list">
-                    <li class="what-we-do-item"><img src="photo/14.png" alt="img" width="370"></li>
-                    <li class="what-we-do-item"><img src="photo/9.png" alt="img" width="370"></li>
-                    <li class="what-we-do-item"><img src="photo/11.png" alt="img" width="370"></li>
+                    <li class="what-we-do-list__item"><img src="photo/14.png" alt="img" width="370"></li>
+                    <li class="what-we-do-list__item"><img src="photo/9.png" alt="img" width="370"></li>
+                    <li class="what-we-do-list__item"><img src="photo/11.png" alt="img" width="370"></li>
                 </ul>
-            </div>
         </section>
-        <section class="people-team">
-            <div class="container">
-                <h2 class="team-caption">Наша команда</h2>
+        <section class="people-team container">
+                <h2 class="people-team__caption">Наша команда</h2>
                 <ul class="cards-people">
-                    <li class="info-team">
-                        <img src="photo/10.png" alt="Designer" class="images-people" width="270">
-                        <h3 class="name-people">Ігор Дем'яненко</h3>
-                        <p class="paragraph-people">Product Designer</p>
-                        <div class="wrapper_people_icon">
+                    <li class="cards-people__item">
+                        <img src="photo/10.png" alt="Designer" class="cards-people__images-people" width="270">
+                        <h3 class="cards-people__name-people-title">Ігор Дем'яненко</h3>
+                        <p class="cards-people__paragraph-people">Product Designer</p>
+                        <div class="wrapper-people-icon">
                             <a href="index.html"><img src="photo/instagram.svg" alt="instagram"></a>
                             <a href="index.html"><img src="photo/twitter.svg" alt="twitter"></a>
                             <a href="index.html"><img src="photo/facebook.svg" alt="facebook"></a>
                             <a href="index.html"><img src="photo/linkedin.svg" alt="linkedIn"></a>
                         </div>
                     </li>
-                    <li class="info-team">
-                        <img src="photo/12.png" alt="Developer" class="images-people" width="270">
-                        <h3 class="name-people">Ольга Рєпіна</h3>
-                        <p class="paragraph-people">Frontend Developer</p>
-                        <div class="wrapper_people_icon">
+                    <li class="cards-people__item">
+                        <img src="photo/12.png" alt="Developer" class="cards-people__images-people" width="270">
+                        <h3 class="cards-people__name-people-title">Ольга Рєпіна</h3>
+                        <p class="cards-people__paragraph-people">Frontend Developer</p>
+                        <div class="wrapper-people-icon">
                             <a href="index.html"><img src="photo/instagram.svg" alt="instagram"></a>
                             <a href="index.html"><img src="photo/twitter.svg" alt="twitter"></a>
                             <a href="index.html"><img src="photo/facebook.svg" alt="facebook"></a>
                             <a href="index.html"><img src="photo/linkedin.svg" alt="linkedIn"></a>
                         </div>
                     </li>
-                    <li class="info-team">
-                        <img src="photo/13.png" alt="Marketing" class="images-people" width="270">
-                        <h3 class="name-people">Микола Тарасов</h3>
-                        <p class="paragraph-people">Marketing</p>
-                        <div class="wrapper_people_icon">
+                    <li class="cards-people__item">
+                        <img src="photo/13.png" alt="Marketing" class="cards-people__images-people" width="270">
+                        <h3 class="cards-people__name-people-title">Микола Тарасов</h3>
+                        <p class="cards-people__paragraph-people">Marketing</p>
+                        <div class="wrapper-people-icon">
                             <a href="index.html"><img src="photo/instagram.svg" alt="instagram"></a>
                             <a href="index.html"><img src="photo/twitter.svg" alt="twitter"></a>
                             <a href="index.html"><img src="photo/facebook.svg" alt="facebook"></a>
                             <a href="index.html"><img src="photo/linkedin.svg" alt="linkedIn"></a>
                         </div>
                     </li>
-                    <li class="info-team">
-                        <img src="photo/15.png" alt="Designer" class="images-people" width="270">
-                        <h3 class="name-people">Михайло Єрмаков</h3>
-                        <p class="paragraph-people">UI Designer</p>
-                        <div class="wrapper_people_icon">
+                    <li class="cards-people__item">
+                        <img src="photo/15.png" alt="Designer" class="cards-people__images-people" width="270">
+                        <h3 class="cards-people__name-people-title">Михайло Єрмаков</h3>
+                        <p class="cards-people__paragraph-people">UI Designer</p>
+                        <div class="wrapper-people-icon">
                             <a href="index.html"><img src="photo/instagram.svg" alt="instagram"></a>
                             <a href="index.html"><img src="photo/twitter.svg" alt="twitter"></a>
                             <a href="index.html"><img src="photo/facebook.svg" alt="facebook"></a>
@@ -180,63 +171,60 @@
                         </div>
                     </li>
                 </ul>
-            </div>
         </section>
-        <section class="regular-clients">
-            <div class="container">
-                <h2 class="regular-clients-title">Постійні клієнти</h2>
+        <section class="regular-clients container">
+                <h2 class="regular-clients__title">Постійні клієнти</h2>
                 <ul class="regular-clients-list">
-                    <li class="regular-clients-item"><img src="photo/ya&co.svg" alt="company" width="41"
-                            class="regular-clients-img"></li>
-                    <li class="regular-clients-item"><img src="photo/taglinehere.svg" alt="company" width="40"
-                            class="regular-clients-img2"></li>
-                    <li class="regular-clients-item"><img src="photo/company.svg" alt="company" width="43.46"
-                            class="regular-clients-img3"></li>
-                    <li class="regular-clients-item"><img src="photo/fosterpeters.svg" alt="company" width="84.44"
-                            class="regular-clients-img4"></li>
-                    <li class="regular-clients-item"><img src="photo/brand.svg" alt="company" width="62.54"
-                            class="regular-clients-img5"></li>
-                    <li class="regular-clients-item"><img src="photo/tagline.svg" alt="company" width="93.79"
-                            class="regular-clients-img6"></li>
+                    <li class="regular-clients-list__item"><img src="photo/ya&co.svg" alt="company" width="41"
+                            class="regular-clients-list__img"></li>
+                    <li class="regular-clients-list__item"><img src="photo/taglinehere.svg" alt="company" width="40"
+                            class="regular-clients-list__img2"></li>
+                    <li class="regular-clients-list__item"><img src="photo/company.svg" alt="company" width="43.46"
+                            class="regular-clients-list__img3"></li>
+                    <li class="regular-clients-list__item"><img src="photo/fosterpeters.svg" alt="company" width="84.44"
+                            class="regular-clients-list__img4"></li>
+                    <li class="regular-clients-list__item"><img src="photo/brand.svg" alt="company" width="62.54"
+                            class="regular-clients-list__img5"></li>
+                    <li class="regular-clients-list__item"><img src="photo/tagline.svg" alt="company" width="93.79"
+                            class="regular-clients-list__img6"></li>
                 </ul>
-            </div>
         </section>
     </main>
     <footer class="footer">
         <div class="container">
-            <div class="wrapper_footer_logo">
-                <a href="index.html" class="logo-footer"><span class="header-span">Web</span>Studio</a>
+            <div class="wrapper-footer-logo">
+                <a href="index.html" class="wrapper-footer-logo__link"><span class="wrapper-footer-logo__span">Web</span>Studio</a>
             </div>
             <ul class="footer-list">
-                <li class="footer-item">
-                    <address class="footer_address">
+                <li class="footer-list__item">
+                    <address class="footer-list__address">
                         м. Київ, пр-т Лесі Українки, 26
                     </address>
                 </li>
-                <li class="footer-item">
-                    <address class="addres_mail">
-                        <a href="mailto:info@devstudio.com" class="mail_addres">info@devstudio.com</a>
+                <li class="footer-list__item">
+                    <address class="footer-list__mail">
+                        <a href="mailto:info@devstudio.com" class="footer-list__mail-addres">info@devstudio.com</a>
                     </address>
                 </li>
-                <li class="footer-item">
-                    <address class="addres_telephone">
-                        <a href="tel:+380961111111" class="telephone_addres">+38 096 111 11 11</a>
+                <li class="footer-list__item">
+                    <address class="footer-list__telephone">
+                        <a href="tel:+380961111111" class="footer-list__telephone-addres">+38 096 111 11 11</a>
                     </address>
                 </li>
             </ul>
-            <h3 class="footer_caption">приєднуйтесь</h3>
-            <ul class="footer_list_icon">
-                <li class="footer_item_icon">
-                    <a href="index.html"><img src="photo/instagram-white.svg" alt="instagram" class="footer-img"></a>
+            <h3 class="footer-caption">приєднуйтесь</h3>
+            <ul class="footer-list-icon">
+                <li class="footer-list-icon__item">
+                    <a href="index.html"><img src="photo/instagram-white.svg" alt="instagram" class="footer-list-icon__img"></a>
                 </li>
-                <li class="footer_item_icon">
-                    <a href="index.html"><img src="photo/twitter-white.svg" alt="twitter" class="footer-img"></a>
+                <li class="footer-list-icon__item">
+                    <a href="index.html"><img src="photo/twitter-white.svg" alt="twitter" class="footer-list-icon__img"></a>
                 </li>
-                <li class="footer_item_icon">
-                    <a href="index.html"><img src="photo/facebook-white.svg" alt="facebook" class="footer-img"></a>
+                <li class="footer-list-icon__item">
+                    <a href="index.html"><img src="photo/facebook-white.svg" alt="facebook" class="footer-list-icon__img"></a>
                 </li>
-                <li class="footer_item_icon">
-                    <a href="index.html"><img src="photo/linkedin-white.svg" alt="LinkedIn" class="footer-img"></a>
+                <li class="footer-list-icon__item">
+                    <a href="index.html"><img src="photo/linkedin-white.svg" alt="LinkedIn" class="footer-list-icon__img"></a>
                 </li>
             </ul>
         </div>
