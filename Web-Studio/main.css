@@ -1,1 +1,96 @@
-/* fonts *//*# sourceMappingURL=main.css.map */
+/* fonts */
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  flex-grow: 3;
+}
+
+.nav_menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav_menu a {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+input[type=checkbox],
+label {
+  display: none;
+}
+
+/* mobile menu */
+@media (max-width: 768px) {
+  nav {
+    order: 1;
+  }
+  label {
+    display: block;
+    height: 30px;
+    width: 30px;
+    margin-left: auto;
+    position: relative;
+  }
+  label:hover {
+    cursor: pointer;
+  }
+  label span {
+    top: 15px;
+  }
+  label span,
+  label span::before,
+  label span::after {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 2px;
+    background: #333;
+    position: absolute;
+    right: 0;
+    transition: 0.3s;
+  }
+  label span::before {
+    top: -8px;
+  }
+  label span::after {
+    top: 8px;
+  }
+  .nav_menu {
+    display: none;
+  }
+  input[type=checkbox]:checked ~ .nav_menu {
+    display: flex;
+    flex-direction: column;
+  }
+  input[type=checkbox]:checked ~ label span {
+    transform: rotate(-45deg);
+  }
+  input[type=checkbox]:checked ~ label span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  input[type=checkbox]:checked ~ label span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  .nav_menu {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: #fff;
+  }
+  .nav_menu li {
+    margin: 15px 0;
+  }
+}/*# sourceMappingURL=main.css.map */
